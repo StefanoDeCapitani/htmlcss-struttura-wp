@@ -1,72 +1,72 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .container {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .container.violet {
-    height: 130px;
-    margin: 20px auto;
+  height: 130px;
+  margin: 25px auto;
 }
 
 .container.yellow {
-    height: 250px;
-    margin-bottom: 20px;
+  height: 500px;
+  margin-bottom: 25px;
 }
 
 .container.blue {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .three_columns_header {
-    height: 50px;
-    margin-bottom: 15px;
+  height: 100px;
+  margin-bottom: 15px;
 }
 
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .column {
-    height: 350px;
-    float: left;
-    width: 30%;
-    margin-bottom: 15px;
+  height: 500px;
+  float: left;
+  width: 30%;
+  margin-bottom: 15px;
 }
 
 .column.center {
-    width: calc(40% - 20px);
-    margin: 0 10px;
+  width: calc(40% - 20px);
+  margin: 0 10px;
 }
 
 .container.purple {
-    height: 50px;
-    margin-bottom: 20px;
+  height: 80px;
+  margin-bottom: 20px;
 }
 
 .violet {
-    background: violet;
+  background: violet;
 }
 
 .yellow {
-    background:gold;
+  background: gold;
 }
 
 .blue {
-    background: blue;
+  background: blue;
 }
 
 .lightblue {
-    background: lightblue;
+  background: lightblue;
 }
 
 .purple {
-    background: purple;
+  background: purple;
 }
