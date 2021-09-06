@@ -29,12 +29,17 @@ Sommario:
 }
 
 /*HEADER*/
+header {
+  padding: 25px 0;
+}
+
 .container.violet {
   height: 130px;
-  margin: 25px auto;
+  margin: auto;
 }
 
 /*MAIN*/
+
 .container.yellow {
   height: 500px;
   margin-bottom: 25px;
@@ -43,13 +48,16 @@ Sommario:
 .container.blue {
   /*height determinata dal contenuto:
   vedi "B. Container con 3 colonne"*/
-  margin-bottom: 10px;
 }
 
 /*FOOTER*/
+
+footer {
+  padding: 10px 0 20px;
+}
+
 .container.purple {
   height: 80px;
-  margin-bottom: 20px;
 }
 
 /* >> B. Container con 3 colonne >> */
