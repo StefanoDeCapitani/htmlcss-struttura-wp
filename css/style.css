@@ -20,7 +20,7 @@
 }
 
 .container.blue {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .three_columns_header {
@@ -35,7 +35,7 @@
 }
 
 .column {
-  height: 500px;
+  height: 550px;
   float: left;
   width: 30%;
   margin-bottom: 15px;
