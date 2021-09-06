@@ -71,7 +71,8 @@ Sommario:
   /*Viene sottratto lo spessore dei margini per non eccedere
   il 100% della larghezza del container con la somma delle
   tre colonne*/
-  margin: 0 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*------------ 3. CLASSI DI UTILITA' ------------*/
