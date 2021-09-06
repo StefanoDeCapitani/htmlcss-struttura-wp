@@ -1,37 +1,62 @@
+/*===============================
+Sommario:
+1. RESET
+2. LAYOUT
+    A: Container principali
+        - HEADER
+        - MAIN
+        - FOOTER
+    B: Container con 3 colonne
+3. CLASSI DI UTILITA'
+    A: Colori Background
+    B: Clearfix
+===============================*/
+
+/*----------------- 1. RESET -----------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*----------------- 2. LAYOUT -----------------*/
+
+/* >> A. Container principali >> */
+
 .container {
   width: 80%;
   margin: auto;
 }
 
+/*HEADER*/
 .container.violet {
   height: 130px;
   margin: 25px auto;
 }
 
+/*MAIN*/
 .container.yellow {
   height: 500px;
   margin-bottom: 25px;
 }
 
 .container.blue {
+  /*height determinata dal contenuto:
+  vedi "B. Container con 3 colonne"*/
   margin-bottom: 10px;
 }
+
+/*FOOTER*/
+.container.purple {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+/* >> B. Container con 3 colonne >> */
 
 .three_columns_header {
   height: 100px;
   margin-bottom: 15px;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .column {
@@ -43,13 +68,15 @@
 
 .column.center {
   width: calc(40% - 20px);
+  /*Viene sottratto lo spessore dei margini per non eccedere
+  il 100% della larghezza del container con la somma delle
+  tre colonne*/
   margin: 0 10px;
 }
 
-.container.purple {
-  height: 80px;
-  margin-bottom: 20px;
-}
+/*------------ 3. CLASSI DI UTILITA' ------------*/
+
+/* >> A. Colori background >> */
 
 .violet {
   background: violet;
@@ -60,7 +87,7 @@
 }
 
 .blue {
-  background: blue;
+  background: cornflowerblue;
 }
 
 .lightblue {
@@ -69,4 +96,12 @@
 
 .purple {
   background: purple;
+}
+
+/* >> B. Clearfix >> */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
