@@ -2,14 +2,12 @@
 Sommario:
 1. RESET
 2. LAYOUT
-    A: Container principali
-        - HEADER
-        - MAIN
-        - FOOTER
-    B: Container con 3 colonne
+    A: HEADER
+    B: MAIN
+      - !!CONTAINER BLUE - 3 COLONNE!!
+    C: FOOTER
 3. CLASSI DI UTILITA'
     A: Colori Background
-    B: Clearfix
 ===============================*/
 
 /*----------------- 1. RESET -----------------*/
@@ -19,16 +17,20 @@ Sommario:
   box-sizing: border-box;
 }
 
-/*----------------- 2. LAYOUT -----------------*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* >> A. Container principali >> */
+/*----------------- 2. LAYOUT -----------------*/
 
 .container {
   width: 80%;
   margin: auto;
 }
 
-/*HEADER*/
+/* >> A. HEADER >> */
 header {
   padding: 25px 0;
 }
@@ -38,27 +40,20 @@ header {
   margin: auto;
 }
 
-/*MAIN*/
+/* >> B. MAIN >> */
 
 .container.yellow {
   height: 500px;
   margin-bottom: 25px;
 }
 
-/* .container.blue -> l'height è determinata dal contenuto:
+/* !!CONTAINER BLUE - 3 COLONNE!! */
+
+.container.blue {
+  /* l'height è determinata dal contenuto:
 vedi "B. Container con 3 colonne"*/
-
-/*FOOTER*/
-
-footer {
-  padding: 10px 0 20px;
+  padding-bottom: 15px;
 }
-
-.container.purple {
-  height: 80px;
-}
-
-/* >> B. Container con 3 colonne >> */
 
 .three_columns_header {
   height: 100px;
@@ -69,16 +64,24 @@ footer {
   height: 550px;
   float: left;
   width: 30%;
-  margin-bottom: 15px;
 }
 
 .column.center {
-  width: calc(40% - 20px);
+  width: calc(40% - 30px);
   /*Viene sottratto lo spessore dei margini per non eccedere
   il 100% della larghezza del container con la somma delle
   tre colonne*/
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 15px;
+}
+
+/* >> C. FOOTER >> */
+
+footer {
+  padding: 10px 0 20px;
+}
+
+.container.purple {
+  height: 80px;
 }
 
 /*------------ 3. CLASSI DI UTILITA' ------------*/
@@ -103,12 +106,4 @@ footer {
 
 .purple {
   background: purple;
-}
-
-/* >> B. Clearfix >> */
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
